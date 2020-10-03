@@ -2705,6 +2705,7 @@ void AssemblyWriter::printModule(const Module *M) {
     printEscapedString(M->getSourceFileName(), Out);
     Out << "\"\n";
   }
+  Out << "EXTRA :: Extra Information added by Nikhil Bansal (170431)\n";
 
   const std::string &DL = M->getDataLayoutStr();
   if (!DL.empty())
